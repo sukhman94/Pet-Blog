@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html"></a>
+    </nav>
+    <main>
+      <section class="container1">
+        <form action="https://httpbin.org/get" method="get">
+          <div class="class">
+            <label for="name" class="label"> Full Name </label>
+            <div class="placeholder">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+              />
+            </div>
+          </div>
+          <div class="class">
+            <label for="phone" class="label"> Phone Number </label>
+            <div class="placeholder">
+              <input
+                class="input"
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+          </div>
+          <div class="class">
+            <label for="email" class="label"> Email Address </label>
+            <div class="placeholder">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="class">
+            <label for="date" class="label"> Date </label>
+            <div class="placeholder">
+              <input class="input" type="date" name="date" id="date" />
+            </div>
+          </div>
+          <div class="class">
+            <label for="time" class="label"> Time </label>
+            <div class="placeholder">
+              <input class="input" type="time" name="time" id="time" />
+            </div>
+          </div>
+
+          <button
+            class="btn"
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
